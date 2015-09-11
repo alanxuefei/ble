@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="48dp" >
+
+        <ImageView
+            android:id="@+id/img0"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:src="@drawable/tyre"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:src="@drawable/tyre"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:src="@drawable/tyre"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:src="@drawable/tyre"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="@dimen/tiny_length"
+            android:layout_height="@dimen/tiny_length"
+            android:src="@drawable/tyre"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextSwitcher
+        android:id="@+id/notice_txt"
+        style="@style/plain_center_align_text"
+        android:layout_width="@dimen/xxxLarge_length"
+        android:layout_height="@dimen/moderate_length"
+        android:inAnimation="@anim/slide_in_from_right"
+        android:outAnimation="@anim/slide_out_to_left" />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.innoweaver.TyreTest.view.CheckableListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/am_list_height"
+    android:background="@drawable/checkable_list_item_bg"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/tiny_length" >
+
+    <TextView
+        android:id="@+id/name_txt"
+        style="@style/plain_left_align_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</com.innoweaver.TyreTest.view.CheckableListItem>

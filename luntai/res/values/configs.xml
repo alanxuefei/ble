@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- actions -->
+    <string name="tyre_main_action">typre.intent.action.TYPRE_MAIN</string>
+    <string name="secondary_automobile_list_action">typre.intent.action.SECONDARY_AUTOMOBILE_LIST</string>
+    <string name="temperature_list_action">typre.intent.action.TEMPERATURE_LIST</string>
+    <string name="test_pressure_action">tyre.intent.action.TEST_PRESSURE</string>
+    <string name="introduction_action">tyre.intent.action.INTRODUCTION</string>
+    <string name="mock_action">tyre.intent.action.MOCK</string>
+
+</resources>

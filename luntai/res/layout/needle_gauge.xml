@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.innoweaver.TyreTest.view.MeterView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/meter_size"
+    android:layout_height="@dimen/meter_size"
+    android:background="@drawable/dial"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/needle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/indicator" />
+
+    <ImageView
+        android:id="@+id/nonius"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/nonius" />
+
+</com.innoweaver.TyreTest.view.MeterView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dilog_width"
+    android:layout_height="@dimen/dilog_height"
+    android:orientation="vertical" >
+
+    <!-- android:minHeight="380dp" -->
+    <!-- android:minWidth="270dp" -->
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/prompt_bg"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="240dp"
+            android:layout_height="320dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp" >
+        </android.support.v4.view.ViewPager>
+
+        <TextView
+            android:id="@+id/guidance_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tiny_length"
+            android:gravity="center_vertical"
+            android:paddingLeft="24dp"
+            android:text="请按闪烁提示,依次进行操作,请记住必须插上测压仪" />
+
+        <TextView
+            android:id="@+id/page_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="24dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="top|center_horizontal"
+            android:text="1/5" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/off_btn"
+        android:layout_width="@dimen/tiny_length"
+        android:layout_height="@dimen/tiny_length"
+        android:layout_above="@id/linear"
+        android:layout_marginLeft="-32dp"
+        android:layout_toRightOf="@id/linear"
+        android:background="@drawable/icon_delete" />
+
+</RelativeLayout>

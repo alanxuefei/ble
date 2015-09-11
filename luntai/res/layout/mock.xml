@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_matting"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <LinearLayout
+        android:id="@+id/tabs_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_container_height"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/speed_tag"
+            style="@style/left_align_form_text"
+            android:layout_width="@dimen/medium_length"
+            android:layout_height="match_parent"
+            android:text="@string/speed_tag" />
+
+        <EditText
+            android:id="@+id/speed_edit"
+            android:layout_width="@dimen/xLarge_length"
+            android:layout_height="@dimen/tiny_length"
+            android:gravity="right|center_vertical"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            style="@style/left_align_form_text"
+            android:layout_width="@dimen/medium_length"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="@string/speed_unit_hint" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tabs_container" >
+
+        <include
+            android:id="@+id/tyre_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            layout="@layout/tyre_btn_1" />
+
+        <include
+            android:id="@+id/tyre_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            layout="@layout/tyre_btn_1" />
+
+        <include
+            android:id="@+id/tyre_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/moderate_length"
+            layout="@layout/tyre_btn_2" />
+
+        <include
+            android:id="@+id/tyre_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/moderate_length"
+            layout="@layout/tyre_btn_2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layoutAnimation="@anim/transy_layout_anim"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/mock_btn"
+            android:layout_width="@dimen/tab_width"
+            android:layout_height="wrap_content"
+            android:text="@string/mock" />
+
+        <Button
+            android:id="@+id/about_us_btn"
+            android:layout_width="@dimen/tab_width"
+            android:layout_height="wrap_content"
+            android:text="@string/about_us" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/car_bg" />
+
+</RelativeLayout>

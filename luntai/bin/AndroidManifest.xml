@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.innoweaver.TyreTest"
+    android:versionCode="1"
+    android:versionName="0.0.1-SNAPSHOT" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".TyreApp"
+        android:icon="@drawable/launcher_icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock.Light" >
+        <activity
+            android:name=".Launcher"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TyreMainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+            <intent-filter>
+                <action android:name="typre.intent.action.TYPRE_MAIN" />
+                <!-- @string/tyre_main_action -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AutomobileSelectActivity"
+            android:label="@string/car_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SecondaryAutomobileListActivity"
+            android:label="@string/car_title"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="typre.intent.action.SECONDARY_AUTOMOBILE_LIST" />
+                <!-- @string/secondary_automobile_list_action -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TemperatureActivity"
+            android:label="@string/temperature_title"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="typre.intent.action.TEMPERATURE_LIST" />
+                <!-- @string/temperature_list_action -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="TestPressureActivity"
+            android:label="@string/test_title"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="tyre.intent.action.TEST_PRESSURE" />
+                <!-- @string/test_pressure_action -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IntroductionActivity"
+            android:label="@string/about_us_title"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="tyre.intent.action.INTRODUCTION" />
+                <!-- @string/introduction_action -->
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MockActivity"
+            android:label="@string/mock_tttle" >
+            <intent-filter>
+                <action android:name="tyre.intent.action.MOCK" />
+                <!-- @string/mock_action -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name=".audioUtil.testOscilloscope" > -->
+        <!-- </activity> -->
+        <service android:name=".bgService.AudioRecordingService" >
+        </service>
+
+        <receiver android:name=".receiver.UpdateReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="TestRecordListActivity"
+            android:label="@string/records_title" >
+        </activity>
+    </application>
+
+</manifest>

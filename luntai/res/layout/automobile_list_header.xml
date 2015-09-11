@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.innoweaver.TyreTest.view.CheckableListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/am_list_height"
+    android:background="@drawable/checkable_list_item_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" 
+    android:visibility="gone"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/logo_img"
+            android:layout_width="@dimen/moderate_length"
+            android:layout_height="@dimen/moderate_length"
+            android:src="@drawable/car" />
+
+        <TextView
+            android:id="@+id/name_txt"
+            style="@style/plain_left_align_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/mini_length"
+            android:text="@string/my_favorite_car"
+            android:drawableRight="@drawable/icon_collect_click"
+             />
+        
+        
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color" />
+
+</com.innoweaver.TyreTest.view.CheckableListItem>

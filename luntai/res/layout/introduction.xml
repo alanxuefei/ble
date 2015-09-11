@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_matting"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_length"
+        android:layoutAnimation="@anim/trans_layout_anim"
+        android:shrinkColumns="0" >
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/tyre" />
+
+            <Button
+                android:id="@+id/pressure_btn"
+                style="@style/large_btn"
+                android:layout_width="@dimen/xxLarge_length"
+                android:layout_height="@dimen/tiny_length"
+                android:layout_gravity="center_vertical"
+                android:minHeight="@dimen/tiny_length"
+                android:minWidth="@dimen/xxLarge_length"
+                android:text="@string/pressure_common_sense" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/tyre" />
+
+            <Button
+                android:id="@+id/soft_btn"
+                style="@style/large_btn"
+                android:layout_width="@dimen/xxLarge_length"
+                android:layout_height="@dimen/tiny_length"
+                android:layout_gravity="center_vertical"
+                android:minHeight="@dimen/tiny_length"
+                android:minWidth="@dimen/xxLarge_length"
+                android:text="@string/software_update" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/tyre" />
+
+            <Button
+                android:id="@+id/guidance_btn"
+                style="@style/large_btn"
+                android:layout_width="@dimen/xxLarge_length"
+                android:layout_height="@dimen/tiny_length"
+                android:layout_gravity="center_vertical"
+                android:minHeight="@dimen/tiny_length"
+                android:minWidth="@dimen/xxLarge_length"
+                android:text="@string/software_manual" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

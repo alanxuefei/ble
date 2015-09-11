@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_matting"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/gauge"
+        android:layout_width="@dimen/meter_size"
+        android:layout_height="@dimen/meter_size"
+        android:layout_marginTop="48dp"
+        layout="@layout/needle_gauge" />
+
+    <TextView
+        android:id="@+id/result_text"
+        style="@style/plain_left_align_text"
+        android:layout_width="@dimen/xxLarge_length"
+        android:layout_height="@dimen/moderate_length"
+        android:layout_marginTop="@dimen/mini_length"
+        android:background="@drawable/input"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:text="@string/presure_tag"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/test_btn"
+            style="@style/large_btn"
+            android:layout_width="@dimen/xLarge_length"
+            android:layout_height="@dimen/moderate_length"
+            android:layout_marginTop="@dimen/mini_length"
+            android:text="@string/test" />
+
+        <Button
+            android:id="@+id/confirm_btn"
+            style="@style/large_btn"
+            android:layout_width="@dimen/xLarge_length"
+            android:layout_height="@dimen/moderate_length"
+            android:layout_marginTop="@dimen/mini_length"
+            android:text="@string/confirm"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

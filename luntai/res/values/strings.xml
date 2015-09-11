@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello tyre!</string>
+    <string name="app_name">轮胎压力</string>
+    <!-- for launcher -->
+    <string name="connect_headset_notice">请先将手机与胎压计连接</string>
+    <string name="waiting_msg">请稍等, 正在为您初始化数据</string>
+    <!-- for main page -->
+    <string name="car_type">车型</string>
+    <string name="temperature">温度</string>
+    <string name="save">保存</string>
+    <string name="load">载入</string>
+    <string name="mock">模拟</string>
+    <string name="about_us">关于</string>
+    <string name="test_result_tag">实测:  </string>
+    <string name="standard_tag">标准:  </string>
+    <string name="connection_notice">请连接轮胎</string>
+    <string name="bar_unit">bar</string>
+    <string name="pa_uit">kpa</string>
+    <string name="psi_uit">psi</string>
+    <!-- for automobiles list -->
+    <string name="my_favorite_car">我的爱车</string>
+    <string name="confirm">确定</string>
+    <string name="back">返回</string>
+    <string name="_default">默认</string>
+    <string name="car_title">选择车辆</string>
+    <string name="your_selection">您选择了</string>
+    <!-- for temperature page -->
+    <string name="temperature_title">设定温度</string>
+    <!-- for test page -->
+    <string name="presure_tag">胎压: </string>
+    <string name="test_title">测试压力</string>
+    <string name="test">测试</string>
+    <string name="re_test">再次测试</string>
+    <!-- for mock -->
+    <string name="speed_tag">车速</string>
+    <string name="time_out_notice">无法获取数据, 请稍后再试</string>
+    <string name="speed_unit_hint">KM/H</string>
+    <string name="mock_tttle">模拟胎压</string>
+    <string name="mock_tag">模拟: </string>
+    <!-- for about us page -->
+    <string name="about_us_title">关于</string>
+    <string name="pressure_common_sense">胎压常识</string>
+    <string name="software_update">软件更新</string>
+    <string name="software_manual">软件使用指南</string>
+    <!-- for test records -->
+    <string name="records_title">读取胎压记录</string>
+    <!-- for introduction -->
+    <string name="tyre_pressure_indroduction">&#8249;h2&#8250;胎压常识&#8249;/h2&#8250;</string>
+
+</resources>

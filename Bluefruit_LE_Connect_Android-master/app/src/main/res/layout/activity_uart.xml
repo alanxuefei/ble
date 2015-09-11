@@ -1,0 +1,190 @@
+<RelativeLayout android:id="@+id/rootLayout"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/default_background"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="com.adafruit.bluefruit.le.connect.app.UartActivity">
+
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--     <include layout="@layout/layout_uart_singleline_controls"/> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sendLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#cccccc"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/sendEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="false"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickSend"
+            android:text="Send"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sendLayout"
+        android:layout_below="@id/headerLayout"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_weight="0.02">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@drawable/car_bg"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_tyre_right_up"
+                android:src="@drawable/tyre"
+                android:layout_below="@+id/textView_rightup"
+                android:layout_toEndOf="@+id/imageView"
+                android:onClick="type_click_right_up" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_tyre_left_up"
+                android:src="@drawable/tyre"
+                android:layout_below="@+id/textView_tyre_left_up"
+                android:layout_toStartOf="@+id/imageView"
+                android:onClick="type_click_left_up" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_tyre_right_down"
+                android:src="@drawable/tyre"
+                android:onClick="type_click_right_down"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_alignStart="@+id/imageView_tyre_right_up" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_tyre_left_down"
+                android:src="@drawable/tyre"
+                android:onClick="type_click_left_down"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_alignStart="@+id/imageView_tyre_left_up" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Null"
+                android:id="@+id/textView_rightup"
+                android:textColor="#ffffff"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textView_tyre_rght_down" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Null"
+                android:id="@+id/textView_tyre_rght_down"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/imageView_tyre_right_down"
+                android:layout_alignEnd="@+id/imageView_tyre_right_down" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Null"
+                android:id="@+id/textView_tyre_left_up"
+                android:textColor="#ffffff"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/imageView_tyre_left_up" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Null"
+                android:id="@+id/textView_tyre_left_down"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/imageView"
+                android:layout_alignStart="@+id/imageView_tyre_left_down" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/bufferTextView"
+            android:layout_width="match_parent"
+            android:layout_height="9dp"
+            android:background="#cccccc"
+            android:cursorVisible="false"
+            android:gravity="top"
+            android:textColorHighlight="#ffffff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClickCopy"
+                android:text="@string/uart_copy"
+                android:textColor="@drawable/default_textcolor"/>
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClickShare"
+                android:text="@string/uart_share"
+                android:textColor="@drawable/default_textcolor"/>
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClickClear"
+                android:text="@string/uart_clear"
+                android:textColor="@drawable/default_textcolor"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

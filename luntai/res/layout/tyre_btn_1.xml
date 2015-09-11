@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/test_txt"
+        style="@style/tyre_tag_text"
+        android:layout_width="@dimen/xLarge_length"
+        android:layout_height="@dimen/tyre_form_height"
+        android:background="@drawable/input"
+        android:text="@string/test_result_tag" />
+
+    <TextView
+        android:id="@+id/std_txt"
+        style="@style/tyre_tag_text"
+        android:layout_width="@dimen/xLarge_length"
+        android:layout_height="@dimen/tyre_form_height"
+        android:background="@drawable/input"
+        android:text="@string/standard_tag" />
+
+    <ImageButton
+        android:id="@+id/tyre_btn"
+        android:layout_width="@dimen/tyre_btn_size"
+        android:layout_height="@dimen/tyre_btn_size"
+        android:background="@null"
+        android:src="@drawable/tyre_bg" />
+
+</LinearLayout>

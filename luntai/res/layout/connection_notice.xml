@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/plain_center_align_text"
+    android:layout_width="@dimen/xxLarge_length"
+    android:layout_height="@dimen/moderate_length"
+    android:minWidth="@dimen/xxLarge_length"
+    android:textColor="@color/blue_font"
+    android:background="@drawable/button_test_click"
+    android:visibility="invisible"
+    android:text="@string/connection_notice" >
+
+</TextView>

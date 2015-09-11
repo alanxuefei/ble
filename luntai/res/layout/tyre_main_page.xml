@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_matting"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/car_bg" />
+
+    <LinearLayout
+        android:id="@+id/tabs_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_container_height"
+        android:gravity="center_horizontal"
+        android:layoutAnimation="@anim/trans_layout_anim" >
+
+        <Button
+            android:id="@+id/choose_car_btn"
+            style="@style/general_btn"
+            android:layout_width="@dimen/tab_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_below_btn_bg"
+            android:text="@string/car_type" />
+
+        <Button
+            android:id="@+id/set_temperature_btn"
+            style="@style/general_btn"
+            android:layout_width="@dimen/tab_width"
+            android:layout_height="wrap_content"
+            android:text="@string/temperature" />
+
+        <Button
+            android:id="@+id/save_btn"
+            style="@style/general_btn"
+            android:layout_width="@dimen/tab_width"
+            android:layout_height="wrap_content"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/load_btn"
+            style="@style/general_btn"
+            android:layout_width="@dimen/tab_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/right_below_btn_bg"
+            android:text="@string/load" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tabs_container" >
+
+        <include
+            android:id="@+id/tyre_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            layout="@layout/tyre_btn_1" />
+
+        <include
+            android:id="@+id/tyre_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dp"
+            layout="@layout/tyre_btn_1" />
+
+        <include
+            android:id="@+id/tyre_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/moderate_length"
+            android:layout_marginLeft="8dp"
+            layout="@layout/tyre_btn_2" />
+
+        <include
+            android:id="@+id/tyre_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/moderate_length"
+            android:layout_marginRight="8dp"
+            layout="@layout/tyre_btn_2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layoutAnimation="@anim/transy_layout_anim" >
+
+        <Button
+            android:id="@+id/mock_btn"
+            style="@style/general_btn"
+            android:layout_width="@dimen/tab_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_above_btn_bg"
+            android:text="@string/mock" />
+
+        <Button
+            android:id="@+id/about_us_btn"
+            style="@style/general_btn"
+            android:layout_width="@dimen/tab_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/right_above_btn_bg"
+            android:text="@string/about_us" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/connection_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/connection_notice" />
+
+</RelativeLayout>

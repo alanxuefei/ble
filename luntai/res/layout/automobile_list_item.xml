@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.innoweaver.TyreTest.view.CheckableListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/am_list_height"
+    android:background="@drawable/checkable_list_item_bg"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/mini_length"
+     >
+
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_width="@dimen/automobile_logo_size"
+        android:layout_height="@dimen/automobile_logo_size"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/name_txt"
+        style="@style/plain_left_align_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/mini_length"
+        android:text="TextView" />
+
+</com.innoweaver.TyreTest.view.CheckableListItem>

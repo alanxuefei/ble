@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="temperatures">
+        <item>40℃ ~ 50℃</item>
+        <item>30℃ ~ 40℃</item>
+        <item>20℃ ~ 30℃</item>
+        <item>10℃ ~ 20℃</item>
+        <item>0℃ ~ 10℃</item>
+        <item>-10℃ ~ 0℃</item>
+        <item>-20℃ ~ -10℃</item>
+        <item>-30℃ ~ -20℃</item>
+    </string-array>
+    <string-array name="temperatures_value">
+        <item>45</item>
+        <item>35</item>
+        <item>25</item>
+        <item>15</item>
+        <item>5</item>
+        <item>-5</item>
+        <item>-15</item>
+        <item>-25</item>
+    </string-array>
+    <string-array name="guidance">
+        <item>请按闪烁提示,依次进行操作,请记住必须插上测压仪</item>
+        <item>先选择车牌,选择后会进入选车型页面</item>
+        <item>再选择车型</item>
+        <item>选择温度</item>
+        <item>依次对四个轮胎进行测试</item>
+    </string-array>
+    <string-array name="guidance_page_number">
+        <item>1/5</item>
+        <item>2/5</item>
+        <item>3/5</item>
+        <item>4/5</item>
+        <item>5/5</item>
+    </string-array>
+
+</resources>

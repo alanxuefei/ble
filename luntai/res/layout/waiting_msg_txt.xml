@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notice_txt"
+    style="@style/plain_center_align_text"
+    android:background="@drawable/button_test_click"
+    android:layout_width="@dimen/xxxLarge_length"
+    android:layout_height="@dimen/moderate_length"
+    android:textColor="@color/blue_font" />
